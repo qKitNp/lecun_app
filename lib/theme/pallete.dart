@@ -69,13 +69,12 @@ class Pallete {
     drawerTheme: const DrawerThemeData(
       backgroundColor: whiteColor,
     ),
-    colorScheme: ColorScheme.fromSeed(seedColor: bgColor),
+    colorScheme: ColorScheme.fromSeed(seedColor: bgColor, background: whiteColor),
     primaryColor: redColor,
     primaryColorDark: redColor,
-    backgroundColor: whiteColor,
     textTheme: TextTheme(
-      bodyText1: GoogleFonts.jua(),
-      bodyText2: GoogleFonts.jua(),
+      bodyLarge: GoogleFonts.jua(),
+      bodyMedium: GoogleFonts.jua(),
       // Add other text styles as needed
     ),
   );
