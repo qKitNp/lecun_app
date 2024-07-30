@@ -14,7 +14,7 @@ class UploadConfirmPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("add a table"),
+        title: const Text("add a table"),
       ),
       body: SafeArea(
           child: Stack(
@@ -23,11 +23,51 @@ class UploadConfirmPage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 80),
             child: ListView(
               children: [
-                ColumnTile(),
-                ColumnTile(),
-                ColumnTile(),
-                ColumnTile(),
-                ColumnTile(),
+                const ColumnTile(),
+                ListTile(
+                  title: const Text("Column Name:"),
+                  subtitle: const Text("<Name of Column from JSON>"),
+                  trailing: const Icon(
+                    Icons.delete_rounded,
+                    color: Pallete.borderGrey,
+                  ),
+                  tileColor: Pallete.pastelBlue,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                      side: const BorderSide(color: Pallete.borderGrey)),
+                ),
+                const ColumnTile(),
+                const ColumnTile(),
+                const ColumnTile(),
+                const ColumnTile(),
+                const ColumnTile(),
+                ListTile(
+                  title: const Text("Column Name:"),
+                  subtitle: const Text("<Name of Column from JSON>"),
+                  trailing: const Icon(
+                    Icons.delete_rounded,
+                    color: Pallete.borderGrey,
+                  ),
+                  tileColor: Pallete.pastelBlue,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                      side: const BorderSide(color: Pallete.borderGrey)),
+                ),
+                const ColumnTile(),
+                const ColumnTile(),
+                ListTile(
+                  title: const Text("Column Name:"),
+                  subtitle: const Text("<Name of Column from JSON>"),
+                  trailing: const Icon(
+                    Icons.delete_rounded,
+                    color: Pallete.borderGrey,
+                  ),
+                  tileColor: Pallete.pastelBlue,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                      side: const BorderSide(color: Pallete.borderGrey)),
+                ),
+                const ColumnTile(),
               ].separatedBy(const Gap(16)),
             ),
           ),
@@ -61,7 +101,7 @@ class UploadConfirmPage extends StatelessWidget {
                         },
                       ),
                     ),
-                    Gap(8),
+                    const Gap(8),
                     Expanded(
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
