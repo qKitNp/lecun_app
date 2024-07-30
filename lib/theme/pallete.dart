@@ -39,7 +39,6 @@ class Pallete {
       ),
       primaryColor: redColor,
       primaryColorDark: redColor,
-      backgroundColor: drawerColor,
       focusColor: redColor,
       textTheme: TextTheme(
         bodyLarge: GoogleFonts.jua(),
@@ -69,7 +68,8 @@ class Pallete {
     drawerTheme: const DrawerThemeData(
       backgroundColor: whiteColor,
     ),
-    colorScheme: ColorScheme.fromSeed(seedColor: bgColor, background: whiteColor),
+    colorScheme:
+        ColorScheme.fromSeed(seedColor: bgColor, background: whiteColor),
     primaryColor: redColor,
     primaryColorDark: redColor,
     textTheme: TextTheme(
